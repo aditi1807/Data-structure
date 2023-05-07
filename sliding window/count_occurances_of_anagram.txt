@@ -1,0 +1,13 @@
+def search(self,pat, txt):
+	    # code here
+	    arr=[]*26
+	    pet=[]*26
+	    for i in range(len(pat)):
+	        pet[pat[i]-'a']+=1
+	    st=0
+	    c=0
+	    end=0
+	    while(end<len(txt)):
+	        if(end==end-st+len(pat)):
+	            if(arr==pat):
+	                c+=1
